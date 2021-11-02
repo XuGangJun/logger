@@ -1,0 +1,18 @@
+1. 本项目为日志组件，分为控制台日志输出对象和文件日志输出对象，对于二者抽取
+共同内容为 mylogger.go,有相同的4个日志等级，对日志的共同操作，以及输出日志的通用接口。
+
+2. 控制台日志对象 ConsoleLogger，实现接口 mylogger.Logger，实现日志输出。
+
+3. 文件日志对象 FileLogger， 也实现接口 mylogger.Logger，实现日志输出到文件。
+FileLogger除了日志等级，还有输出日志文件路径、文件名、文件大小等属性，此外还有
+初始化文件、分割文件等操作。
+
+4. ConsoleLogger和FileLogger的函数设置为方法，与结构体绑定。
+
+5. 日志函数的调用者的信息，包括调用者所在函数，行数,文件名等信息，使用
+runtime.Caller（skip int）函数，参数 skip 是堆栈帧的数量上升，
+参数 skip 为 0 时，标识 Caller 的调用者
+(即 0 -- mylogger.getInfo(), 1 -- ConsoleLogger或者NewFileLogger的log(),
+2 -- ConsoleLogger或者NewFileLogger的Info(), 3 -- main()函数的调用)。
+
+6. 并发。使用 sync.WaitGroup 来防止主线程在其他线程还未结束时先结束。

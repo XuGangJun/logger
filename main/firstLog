@@ -1,0 +1,16 @@
+[2021-11-02 05:20:11] [ERROR] [asm_amd64.s:goexit:1581] file Something Error---4
+[2021-11-02 05:20:11] [ERROR] [asm_amd64.s:goexit:1581] file Something Error---4
+[2021-11-02 05:20:11] [WARN] [asm_amd64.s:goexit:1581] file Warn Something---3
+[2021-11-02 05:20:11] [INFO] [asm_amd64.s:goexit:1581] file sample Info---1
+[2021-11-02 05:20:11] [DEBUG] [asm_amd64.s:goexit:1581] file Debug Log test---2
+[2021-11-02 05:20:11] [DEBUG] [asm_amd64.s:goexit:1581] file Debug Log test---2
+[2021-11-02 05:20:11] [INFO] [asm_amd64.s:goexit:1581] file sample Info---1
+[2021-11-02 05:20:11] [WARN] [asm_amd64.s:goexit:1581] file Warn Something---3
+[2021-11-02 05:20:32] [ERROR] [asm_amd64.s:goexit:1581] file Something Error---4
+[2021-11-02 05:20:32] [INFO] [asm_amd64.s:goexit:1581] file sample Info---1
+[2021-11-02 05:20:32] [ERROR] [asm_amd64.s:goexit:1581] file Something Error---4
+[2021-11-02 05:20:32] [INFO] [asm_amd64.s:goexit:1581] file sample Info---1
+[2021-11-02 05:20:32] [DEBUG] [asm_amd64.s:goexit:1581] file Debug Log test---2
+[2021-11-02 05:20:32] [WARN] [asm_amd64.s:goexit:1581] file Warn Something---3
+[2021-11-02 05:20:32] [WARN] [asm_amd64.s:goexit:1581] file Warn Something---3
+[2021-11-02 05:20:32] [DEBUG] [asm_amd64.s:goexit:1581] file Debug Log test---2
