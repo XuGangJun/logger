@@ -18,3 +18,5 @@ runtime.Caller（skip int）函数，参数 skip 是堆栈帧的数量上升，
 2 -- ConsoleLogger或者NewFileLogger的Info(), 3 -- main()函数的调用)。
 
 7. 并发。使用 sync.WaitGroup 来防止主线程在其他线程还未结束时先结束。
+主线程使用 go 开启线程，调用的函数结束时减少一个等待数defer waitGroup.Done()。
+wg.Wait()等待数为0，主线程可结束。
